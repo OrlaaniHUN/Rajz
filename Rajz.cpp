@@ -61,7 +61,11 @@ int main(int argc, char* argv[])
 			}
 			else
 			{
-				points.clear();
+				//points.clear();
+				if (!points.empty())
+				{
+					points.pop_back();
+				}
 			}
 		}
 
